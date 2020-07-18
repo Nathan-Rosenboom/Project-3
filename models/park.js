@@ -25,6 +25,10 @@ const ParkSchema = new Schema({
     exerciseFacilities: {
         type: Boolean,
         required: true,
+    },
+    petsAllowed: {
+        type: Boolean,
+        required: true,
     }
 });
 
