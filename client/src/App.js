@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import ParkList from "./components/ParkList";
-import EditPark from "./components/EditPark";
-import CreatePark from "./components/CreatePark";
+import ParkList from "./components/ParkList/index.js";
+import EditPark from "./components/EditPark/index.js";
+import CreatePark from "./components/CreatePark/index.js";
 
 import logo from "./logo.svg";
 
