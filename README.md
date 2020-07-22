@@ -1,21 +1,29 @@
-# Park Finder
+# Create React Express App
 
-An application that allows users to find parks and add parks that dont exist in the database.
+## About This Boilerplate
 
-## Description
+This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
 
-The application allows users to search for parks that suit their needs. Users can filter search results by location, facilities (playground, changing rooms, water fountains, pets allowed) and uses (exercise, play, socialise). If a user finds a park that in not in the database, they have to option to add this park to the database and list what features the park has and what uses the park is suitable for.
+The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
 
-## Links:
+## Starting the app locally
 
-### Github Repository:
+Start by installing front and backend dependencies. While in this directory, run the following command:
 
-https://github.com/Nathan-Rosenboom/Project-3
+```
+npm install
+```
 
-### Project Wireframe: 
+This should install node modules within the server and the client folder.
 
-https://wireframe.cc/LiG2hb
+After both installations complete, run the following command in your terminal:
 
-### Deployed Application:
+```
+npm start
+```
 
-https://guarded-waters-30350.herokuapp.com/
+Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+
+## Deployment (Heroku)
+
+To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.

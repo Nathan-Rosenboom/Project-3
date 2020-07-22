@@ -1,33 +1,37 @@
-const mogoose = require("mongoose");
-const Schema = mogoose.Schema;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 const ParkSchema = new Schema({
-    name: {
+    park_name: {
         type: String,
         required: true,
     },
-    description: {
+    park_description: {
         type: String,
         required: true,
     },
-    address: {
+    park_address: {
         type: String,
         required: true,
     },
-    playground: {
-        type: Boolean,
+    park_playground: {
+        type: String,
+        default: 'No',
         required: true,
     },
-    toilets: {
-        type: Boolean,
+    park_toilets: {
+        type: String,
+        default: 'No',
         required: true,
     },
-    exerciseFacilities: {
-        type: Boolean,
+    park_exerciseFacilities: {
+        type: String,
+        default: 'No',
         required: true,
     },
-    petsAllowed: {
-        type: Boolean,
+    park_petsAllowed: {
+        type: String,
+        default: 'No',
         required: true,
     }
 });

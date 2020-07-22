@@ -1,4 +1,4 @@
-const park = require('./parkController');
+const park = require('./park');
 
 module.exports = {
     park,
